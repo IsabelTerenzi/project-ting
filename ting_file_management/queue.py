@@ -1,5 +1,6 @@
 from ting_file_management.abstract_queue import AbstractQueue
 
+
 # Requisito 1 - Implemente uma fila para armazenar os arquivos que serão lidos
 class Queue(AbstractQueue):
     def __init__(self):
