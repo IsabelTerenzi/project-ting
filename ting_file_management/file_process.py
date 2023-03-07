@@ -28,5 +28,12 @@ def remove(instance):
     return sys.stdout.write(f'Arquivo {path_file} removido com sucesso\n')
 
 
+# Requisito 5 - Implemente uma função file_metadata
+# dentro do módulo file_process capaz de apresentar
+# as informações superficiais de um arquivo processado.
 def file_metadata(instance, position):
-    """Aqui irá sua implementação"""
+    try:
+        result = instance.search(position)
+        return sys.stdout.write(str(result))
+    except IndexError:
+        return sys.stderr.write('Posição inválida\n')
