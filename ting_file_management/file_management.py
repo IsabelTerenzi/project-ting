@@ -1,7 +1,7 @@
 import sys
 
 
-# Requisito 2 - Implemente uma função txt_importer 
+# Requisito 2 - Implemente uma função txt_importer
 # dentro do módulo file_management
 def txt_importer(path_file):
     if not path_file.endswith('.txt'):
